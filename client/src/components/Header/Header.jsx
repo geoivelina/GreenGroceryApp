@@ -1,16 +1,22 @@
+import {Link} from "react-router-dom";
+
 export default function Header(){
     return(
         <div className="hero_area">
-        {/* <!-- header section strats --> */}
-        <div className="brand_box">
-          <a className="navbar-brand" href="index.html">
-            <span>
-              GreenGrocery
-            </span>
-          </a>
+        <div className="contact_nav_container">
+        <div className="container">
+          <div className="contact_nav">
+              <Link className="fa fa-map-marker" aria-hidden="true" href="/">
+                <span> GreenGrocery </span></Link>
+              <i className="fa fa-map-marker" aria-hidden="true"></i>
+              <span> Address : wisigaton lpusm loram </span>
+              <i className="fa fa-envelope" aria-hidden="true"></i>
+              <span>  Email : demo@gmail.com  </span>
+              <i className="fa fa-phone" aria-hidden="true"></i>
+              <span> Phone Call : +01 123455678990  </span>
+          </div>
         </div>
-        {/* <!-- end header section -->
-        <!-- slider section --> */}
+      </div>
         <section className=" slider_section position-relative">
           <div id="carouselExampleControls" className="carousel slide " data-ride="carousel">
             <div className="carousel-inner">
@@ -19,26 +25,9 @@ export default function Header(){
                   <img src="images/slider-img.jpg" alt=""/>
                 </div>
               </div>
-              <div className="carousel-item">
-                <div className="img-box">
-                  <img src="images/slider-img.jpg" alt=""/>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <div className="img-box">
-                  <img src="images/slider-img.jpg" alt=""/>
-                </div>
-              </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span className="sr-only">Next</span>
-            </a>
           </div>
         </section>
-        {/* <!-- end slider section --> */}
       </div>
     
     )

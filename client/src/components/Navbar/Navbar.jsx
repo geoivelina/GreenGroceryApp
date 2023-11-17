@@ -12,27 +12,33 @@ export default function Navbar(){
                 <div className="d-flex  flex-column flex-lg-row align-items-center">
                   <ul className="navbar-nav  ">
                     <li className="nav-item active">
-                      <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                      <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="about.html">About </a>
+                      <a className="nav-link" href="/aboutUs">About </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="fruit.html">Our Fruit </a>
+                      <a className="nav-link" href="/catalog">Shop Now </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="testimonial.html">Testimonial</a>
+                      <a className="nav-link" href="/testimonial">Testimonial</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="contact.html">Contact Us</a>
+                      <a className="nav-link" href="/contactUs">Contact Us</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#">Login</a>
+                      <a className="nav-link" href="/login">Login</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/register">Register</a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/logout">Logout</a>
                     </li>
                   </ul>
-                  <form className="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  {/* <form className="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
                     <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                  </form>
+                  </form> */}
                 </div>
               </div>
             </nav>

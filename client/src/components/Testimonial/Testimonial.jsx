@@ -1,8 +1,9 @@
 export default function Testimonial(){
     return (
-        <section className="client_section layout_padding-bottom">
+        <section className="client_section layout_padding-bottom mt-5">
         <div className="container ">
           <div className="heading_container">
+            <hr/>
             <h2>
               What Syas Cutomer
             </h2>

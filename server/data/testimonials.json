@@ -1,0 +1,23 @@
+{
+    "10bf647c-84a8-11ee-8ac8-325096b39f47":{
+        "customerName":"Jone Mark",
+        "imageUrl":"images/client-img.png",
+        "title": "Lorem ipsum dolor sit amet,",
+        "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+        "_id":"10bf647c-84a8-11ee-8ac8-325096b39f47"
+    },
+    "25110dd6-84a8-11ee-9f82-325096b39f47":{
+        "customerName":"Jane Joe",
+        "imageUrl":"images/client-img2.png",
+        "title": "Lorem ipsum dolor sit amet,",
+        "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+        "_id":"25110dd6-84a8-11ee-9f82-325096b39f47"
+    },
+    "fbc68586-84a8-11ee-b919-325096b39f47":{
+        "customerName":"Sam Smith",
+        "imageUrl":"images/client-img1.png",
+        "title": "Lorem ipsum dolor sit amet,",
+        "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+        "_id":"fbc68586-84a8-11ee-b919-325096b39f47"
+    }
+}
