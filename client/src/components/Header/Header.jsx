@@ -6,8 +6,8 @@ export default function Header(){
         <div className="contact_nav_container">
         <div className="container">
           <div className="contact_nav">
-              <Link className="fa fa-map-marker" aria-hidden="true" href="/">
-                <span> GreenGrocery </span></Link>
+              <a className="fa fa-map-marker" aria-hidden="true" href="/">
+                <span> GreenGrocery </span></a>
               <i className="fa fa-map-marker" aria-hidden="true"></i>
               <span> Address : wisigaton lpusm loram </span>
               <i className="fa fa-envelope" aria-hidden="true"></i>

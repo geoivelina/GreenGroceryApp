@@ -12,24 +12,40 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Home from "./components/Home/Home";
+import { useEffect, useState } from "react";
+import * as fruitService from "./services/fruitService";
+import * as testimonialService from './services/testimonialService';
+import FruitDetails from "./components/FruitDetails/FruitDetails";
 
 function App() {
+    const [fruits, setFruits] = useState([]);
+    const [testimonials, setTestimonials] = useState([]);
+
+    useEffect(() => {
+        fruitService.getAllFruits().then((result) => {
+            setFruits(result);
+        });
+        testimonialService.getAllTestimonial().then((x) => {
+           setTestimonials(x);
+        });
+    }, []);
+
     return (
         <div>
             <Header />
             <Navbar />
-            {/* <Home/> */}
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<Home />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/aboutUs" element={<AboutUs />} />
-                <Route path="/catalog" element={<Catalog />} />
-                <Route path="/testimonial" element={<Testimonial />} />
+                <Route path="/catalog" element={<Catalog fruits={fruits} />} />
+                <Route path="/fruits/:fruitId" element={<FruitDetails />} />
+                <Route path="/testimonial" element={<Testimonial testimonials={testimonials}/>} />
                 <Route path="/contactUs" element={<ContactUs />} />
-                <Route path="/storeInfo" element={<StoreInfo />} />
-                <Route path="/login" element={<Login />}/>
-                <Route path="/register" element={<Register />}/>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
             </Routes>
+            <StoreInfo />
             <Footer />
         </div>
     );

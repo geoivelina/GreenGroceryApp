@@ -1,19 +1,19 @@
 export default function Login(){
     return (
-        <section className="form_section layout_padding-bottom mt-5">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-4 offset-md-4">
-              <div className="heading_container">
-                <hr />
-                <h2>Login</h2>
-                <hr />
-              </div>
+      <section className="form_section layout_padding-bottom mt-5">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="offset-lg-2 col-md-12 offset-md-1">
+            <div className="heading_container">
+              <hr />
+              <h2>Login in Your Account</h2>
+              <hr />
             </div>
           </div>
-          <div className="layout_padding2-top">
+        </div>
+          <div className="form_padding2-top">
             <div className="row">
-              <div className="col-md-4 offset-md-4">
+              <div className="col-lg-4 offset-lg-4 col-md-5 offset-md-1">
                 <form action="">
                   <div className="login_form-container">
                     <div>

@@ -1,31 +1,38 @@
 {
     "c2dcbc2a-84a5-11ee-94a2-325096b39f47":{
-        "imageUrl":"images/f-1.jpg",
         "fruitName": "Orange",
+        "imageUrl":"images/f-1.jpg",
+        "details":"Organic oranges grown with care from our partners from Greece",
         "_id":"c2dcbc2a-84a5-11ee-94a2-325096b39f47"
     },
     "42cc84d8-84a6-11ee-ae69-325096b39f47":{
-        "imageUrl":"images/f-2.jpg",
         "fruitName": "Blueberry",
+        "imageUrl":"images/f-2.jpg",
+        "details":"Organic blueberies grown in Bulgaria from our partners",
         "_id":"42cc84d8-84a6-11ee-ae69-325096b39f47"
     },
     "5886b14a-84a6-11ee-8e3d-325096b39f47":{
-        "imageUrl":"images/f-3.jpg",
         "fruitName": "Banana",
+        "imageUrl":"images/f-3.jpg",
+        "details":"Organic bananas grown with care from our partners from Ecuador",
         "_id":"5886b14a-84a6-11ee-8e3d-325096b39f47"
     },
     "6ba6edda-84a6-11ee-a0fb-325096b39f47":{
-        "imageUrl":"images/f-4.jpg",
         "fruitName": "Apple",
+        "imageUrl":"images/f-4.jpg",
+        "details":"Organic apples grown in Bulgaria from our partners",
         "_id":"6ba6edda-84a6-11ee-a0fb-325096b39f47"
     },
     "7fdffd6e-84a6-11ee-8ada-325096b39f47":{
         "imageUrl":"images/f-5.jpg",
         "fruitName": "Mango",
+        "details":"Organic mango grown with care from our partners from South Africa",
         "_id":"7fdffd6e-84a6-11ee-8ada-325096b39f47"
-    }, "ae4b3704-84a6-11ee-bc43-325096b39f47":{
-        "imageUrl":"images/f-6.jpg",
+    }, 
+    "ae4b3704-84a6-11ee-bc43-325096b39f47":{
         "fruitName": "Strawberry",
+        "imageUrl":"images/f-6.jpg",
+        "details":"Organic strawberies grown in Bulgaria from our partners",
         "_id":"ae4b3704-84a6-11ee-bc43-325096b39f47"
     }
    

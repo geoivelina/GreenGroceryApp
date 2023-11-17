@@ -1,9 +1,10 @@
+import {Link} from 'react-router-dom';
 export default function Footer(){
     return(
-        <section class="container-fluid footer_section ">
+        <section className="container-fluid footer_section ">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved. Design by
-          <a href="https://html.design/">Free Html Templates</a>
+          <Link to="https://html.design/">Free Html Templates</Link>
         </p>
       </section>
     )

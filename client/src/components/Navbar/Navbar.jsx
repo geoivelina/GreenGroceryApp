@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 export default function Navbar(){
     return(
         <section className="nav_section">
@@ -12,28 +13,28 @@ export default function Navbar(){
                 <div className="d-flex  flex-column flex-lg-row align-items-center">
                   <ul className="navbar-nav  ">
                     <li className="nav-item active">
-                      <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+                      <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/aboutUs">About </a>
+                      <Link className="nav-link" to="/aboutUs">About </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/catalog">Shop Now </a>
+                      <Link className="nav-link" to="/catalog">Shop Now </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/testimonial">Testimonial</a>
+                      <Link className="nav-link" to="/testimonial">Testimonial</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/contactUs">Contact Us</a>
+                      <Link className="nav-link" to="/contactUs">Contact Us</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/login">Login</a>
+                      <Link className="nav-link" to="/login">Login</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/register">Register</a>
+                      <Link className="nav-link" to="/register">Register</Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/logout">Logout</a>
+                      <Link className="nav-link" to="/logout">Logout</Link>
                     </li>
                   </ul>
                   {/* <form className="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
