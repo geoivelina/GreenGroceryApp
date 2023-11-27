@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import Path from "../../path";
 export default function AboutUs(){
     return(
         <section className="about_section ">
@@ -18,7 +19,7 @@ export default function AboutUs(){
                 <p>
                   There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
                 </p>
-                <Link to="/shop">  Shop Now </Link>
+                <Link to={Path.Shop}>  Shop Now </Link>
               </div>
             </div>
           </div>

@@ -170,7 +170,7 @@ a:focus {
   border-radius: 5px
 }
 
-.nav_section .custom_nav2 .custom_nav-container .navbar-nav .nav-item .nav-link {
+.nav_section .custom_nav2 .custom_nav-container .navbar-nav  .nav-link {
   padding: 10px 30px;
   color: #ffffff;
   text-align: center;
@@ -183,7 +183,7 @@ a:focus {
           justify-content: center;
 }
 
-.nav_section .custom_nav-container .nav_search-btn {
+/* .nav_section .custom_nav-container .nav_search-btn {
   background-image: url(../images/search-icon.png);
   background-size: 18px;
   background-repeat: no-repeat;
@@ -192,8 +192,8 @@ a:focus {
   padding: 0;
   border: none;
   margin: 0 40px 0 15px;
-  background-position: center;
-}
+  background-position: center; 
+}*/
 
 .shop_section .box {
   display: -webkit-box;

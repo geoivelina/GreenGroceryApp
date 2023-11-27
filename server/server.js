@@ -1263,7 +1263,70 @@
     		}
     	},
     	likes: {
-    	}
+    	},
+        fruits:{
+            "c2dcbc2a-84a5-11ee-94a2-325096b39f47":{
+                "fruitName": "Orange",
+                "imageUrl":"images/f-1.jpg",
+                "details":"Organic oranges grown with care from our partners from Greece",
+                "_id":"c2dcbc2a-84a5-11ee-94a2-325096b39f47"
+            },
+            "42cc84d8-84a6-11ee-ae69-325096b39f47":{
+                "fruitName": "Blueberry",
+                "imageUrl":"images/f-2.jpg",
+                "details":"Organic blueberies grown in Bulgaria from our partners",
+                "_id":"42cc84d8-84a6-11ee-ae69-325096b39f47"
+            },
+            "5886b14a-84a6-11ee-8e3d-325096b39f47":{
+                "fruitName": "Banana",
+                "imageUrl":"images/f-3.jpg",
+                "details":"Organic bananas grown with care from our partners from Ecuador",
+                "_id":"5886b14a-84a6-11ee-8e3d-325096b39f47"
+            },
+            "6ba6edda-84a6-11ee-a0fb-325096b39f47":{
+                "fruitName": "Apple",
+                "imageUrl":"images/f-4.jpg",
+                "details":"Organic apples grown in Bulgaria from our partners",
+                "_id":"6ba6edda-84a6-11ee-a0fb-325096b39f47"
+            },
+            "7fdffd6e-84a6-11ee-8ada-325096b39f47":{
+                "imageUrl":"images/f-5.jpg",
+                "fruitName": "Mango",
+                "details":"Organic mango grown with care from our partners from South Africa",
+                "_id":"7fdffd6e-84a6-11ee-8ada-325096b39f47"
+            }, 
+            "ae4b3704-84a6-11ee-bc43-325096b39f47":{
+                "fruitName": "Strawberry",
+                "imageUrl":"images/f-6.jpg",
+                "details":"Organic strawberies grown in Bulgaria from our partners",
+                "_id":"ae4b3704-84a6-11ee-bc43-325096b39f47"
+            }
+           
+        },
+        testimonials: {
+            "10bf647c-84a8-11ee-8ac8-325096b39f47":{
+                "customerName":"Jone Mark",
+                "imageUrl":"images/client-img.png",
+                "title": "Lorem ipsum dolor sit amet,",
+                "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+                "_id":"10bf647c-84a8-11ee-8ac8-325096b39f47"
+            },
+            "25110dd6-84a8-11ee-9f82-325096b39f47":{
+                "customerName":"Jane Joe",
+                "imageUrl":"images/client-img2.png",
+                "title": "Lorem ipsum dolor sit amet,",
+                "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+                "_id":"25110dd6-84a8-11ee-9f82-325096b39f47"
+            },
+            "fbc68586-84a8-11ee-b919-325096b39f47":{
+                "customerName":"Sam Smith",
+                "imageUrl":"images/client-img1.png",
+                "title": "Lorem ipsum dolor sit amet,",
+                "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",
+                "_id":"fbc68586-84a8-11ee-b919-325096b39f47"
+            }
+        }
+
     };
     var settings = {
     	identity: identity,

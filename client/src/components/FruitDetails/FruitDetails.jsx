@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import * as fruitService from "../../services/fruitService";
+import Path from "../../path";
 
 export default function FruitDetails() {
     const [fruit, setFruit] = useState([]);
@@ -29,7 +30,7 @@ export default function FruitDetails() {
                                 <h2> {fruit.fruitName} </h2>
                             </div>
                             <p>{fruit.details}</p>
-                            <Link to="/shop"> Shop Now </Link>
+                            <Link to={Path.Shop}> Shop Now </Link>
                         </div>
                     </div>
                 </div>

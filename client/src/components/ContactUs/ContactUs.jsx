@@ -1,3 +1,4 @@
+
 export default function ContactUs(){
     return (
         <section className="form_section layout_padding-bottom mt-5">
@@ -6,7 +7,7 @@ export default function ContactUs(){
             <div className="offset-lg-2 col-md-12 offset-md-1">
               <div className="heading_container">
                 <hr />
-                <h2>Request A call back</h2>
+                <h2>Get In Contact With Us</h2>
                 <hr />
               </div>
             </div>
