@@ -1,6 +1,13 @@
 import {Link} from "react-router-dom";
 import Path from "../../path";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthContext";
+
+
 export default function AboutUs(){
+  const {
+    isAuthenticated, 
+} = useContext(AuthContext);
     return(
         <section className="about_section ">
         <div className="container-fluid">
@@ -19,7 +26,12 @@ export default function AboutUs(){
                 <p>
                   There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour
                 </p>
-                <Link to={Path.Shop}>  Shop Now </Link>
+                {isAuthenticated && (
+                  <Link to={Path.Shop}>  Shop Now </Link>
+                )}
+                {!isAuthenticated &&(
+                  <Link to={Path.Login}>  Shop Now </Link>
+                )}
               </div>
             </div>
           </div>

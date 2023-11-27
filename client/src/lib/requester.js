@@ -17,15 +17,17 @@ export const requester = async (method, url, data) => {
         method,
     });
 
-//     if (res.status === 204) {
-//         return {};
-//     }
+
+    //checks if there is content in the request
+    if (res.status === 204) {
+        return {};
+    }
 
     const result = await res.json();
 
-//     if (!res.ok) {
-//         throw result;
-//     }
+    if (!res.ok) {
+        throw result;
+    }
 
     return result;
 };
@@ -40,14 +42,14 @@ const buildOptions = (data) => {
         };
     }
 
-//     const token = localStorage.getItem("accessToken");
+    const token = localStorage.getItem("accessToken");
     
-//     if (token) {
-//         options.headers = {
-//             ...options.headers,
-//             "X-Authorization": token,
-//         };
-//     }
+    if (token) {
+        options.headers = {
+            ...options.headers,
+            "X-Authorization": token
+        };
+    }
 
     return options;
 };

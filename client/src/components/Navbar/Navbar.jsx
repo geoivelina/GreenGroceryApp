@@ -16,18 +16,18 @@ export default function Navbar(){
         <div className="container">
           <div className="custom_nav2">
             <nav className="navbar navbar-expand custom_nav-container ">
-                            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <div className="d-flex  flex-column flex-lg-row align-items-center">
                   <div className="navbar-nav ">
                       <Link className="nav-link" to={Path.Home}>Home <span className="sr-only">(current)</span></Link>
                       <Link className="nav-link" to={Path.AboutUs}>About </Link>
-                      <Link className="nav-link" to={Path.Catalog}>Shop Now </Link>
                       <Link className="nav-link" to={Path.Testimonial}>Testimonial</Link>
                       <Link className="nav-link" to={Path.ContactUs}>Contact Us</Link>
                     {isAuthenticated && (
                       <div>
+                        <Link className="nav-link" to={Path.Catalog}>Shop Now </Link>
                     <span className='nav-link'>| Welcome, {email} |</span>
-                    <Link className="nav-link" to="/logout">Logout</Link>
+                    <Link className="nav-link" to={Path.Logout}>Logout</Link>
                     </div>
                     )}
                     {!isAuthenticated && ( 

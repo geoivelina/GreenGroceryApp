@@ -4,7 +4,7 @@ const Path=  {
     AboutUs:"/aboutUs",
     Catalog:"/catalog",
     // FruitDetails: "/fruits/:fruitId",
-    Testimonial:"/fruits/:fruitId",
+    Testimonial:"/testimonial",
     ContactUs:"/contactUs",
     Login:"/login",
     Register:"/register",

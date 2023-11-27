@@ -1264,7 +1264,7 @@
     	},
     	likes: {
     	},
-        fruits:{
+        fruits: {
             "c2dcbc2a-84a5-11ee-94a2-325096b39f47":{
                 "fruitName": "Orange",
                 "imageUrl":"images/f-1.jpg",
