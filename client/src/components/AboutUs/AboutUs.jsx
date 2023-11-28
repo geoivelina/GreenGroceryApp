@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import Path from "../../path";
 import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
+import AuthContext from "../../contexts/AuthContext";
 
 
 export default function AboutUs(){

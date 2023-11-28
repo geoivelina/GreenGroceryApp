@@ -1,7 +1,8 @@
 import {Link} from 'react-router-dom';
 import Path from '../../path';
 import { useContext } from 'react';
-import { AuthContext } from '../../contexts/AuthContext';
+import AuthContext from '../../contexts/AuthContext';
+
 
 
 export default function Navbar(){
@@ -23,9 +24,9 @@ export default function Navbar(){
                       <Link className="nav-link" to={Path.AboutUs}>About </Link>
                       <Link className="nav-link" to={Path.Testimonial}>Testimonial</Link>
                       <Link className="nav-link" to={Path.ContactUs}>Contact Us</Link>
+                      <Link className="nav-link" to={Path.Catalog}>Shop Now </Link>
                     {isAuthenticated && (
                       <div>
-                        <Link className="nav-link" to={Path.Catalog}>Shop Now </Link>
                     <span className='nav-link'>| Welcome, {email} |</span>
                     <Link className="nav-link" to={Path.Logout}>Logout</Link>
                     </div>

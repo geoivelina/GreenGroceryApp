@@ -4,13 +4,11 @@ import * as fruitService from "../../services/fruitService";
 import Path from "../../path";
 
 export default function FruitDetails() {
-    const [fruit, setFruit] = useState([]);
+    const [fruit, setFruit] = useState({});
     const { fruitId } = useParams();
 
     useEffect(() => {
-        const result = fruitService.getFruitBy(fruitId).then((fruit) => {
-            setFruit(fruit);
-        });
+        const result = fruitService.getFruitBy(fruitId).then(setFruit);
     }, [fruitId]);
 
     return (
@@ -18,8 +16,8 @@ export default function FruitDetails() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-6 px-0">
-                        <div className="img-box">
                             <img src={fruit.imageUrl} alt="" />
+                        <div className="img-box">
                             <h3>WHERE IS THE FRUITE PHOTO</h3>
                         </div>
                     </div>

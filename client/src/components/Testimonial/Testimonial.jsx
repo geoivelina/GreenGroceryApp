@@ -1,6 +1,17 @@
+import { useEffect, useState } from "react";
 import TestimonialItem from "./TestimonialItem";
 
-export default function Testimonial({ testimonials }) {
+import * as testimonialService from "../../services/testimonialService";
+
+export default function Testimonial() {
+    
+const [testimonials, setTestimonials] = useState([]);
+
+useEffect(() => {
+        testimonialService.getAllTestimonial().then(x => {
+        setTestimonials(x);
+    });
+}, []);
     return (
         <section className="client_section layout_padding-bottom mt-5">
             <div className="container ">

@@ -3,7 +3,7 @@ const Path=  {
     Shop:"/shop",
     AboutUs:"/aboutUs",
     Catalog:"/catalog",
-    // FruitDetails: "/fruits/:fruitId",
+    FruitDetails: "/fruits/:fruitId",
     Testimonial:"/testimonial",
     ContactUs:"/contactUs",
     Login:"/login",

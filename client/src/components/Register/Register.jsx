@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import useForm from "../../hooks/useForm";
 import Path from "../../path";
 import { useContext } from "react";
-import { AuthContext } from "../../contexts/AuthContext";
+import AuthContext from "../../contexts/AuthContext";
+
 
 //It brakes when value = {formValues[RegisterFormKeys.Email]}
 const RegisterFormKeys = {

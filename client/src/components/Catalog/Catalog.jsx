@@ -1,7 +1,16 @@
+import { useEffect, useState } from "react";
 import CatalogItem from "./catalogItem";
 
-export default function Catalog({ fruits }) {
-    console.log(fruits);
+import * as fruitService from "../../services/fruitService";
+
+export default function Catalog() {
+    const [fruits, setFruits] = useState([]);
+
+    useEffect(() => {
+        fruitService.getAllFruits().then((result) => {
+            setFruits(result);
+        });
+    }, []);
     return (
         <section className="fruit_section layout_padding-bottom mt-5">
             <div className="container">
