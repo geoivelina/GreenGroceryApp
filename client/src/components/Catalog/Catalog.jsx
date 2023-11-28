@@ -7,9 +7,11 @@ export default function Catalog() {
     const [fruits, setFruits] = useState([]);
 
     useEffect(() => {
-        fruitService.getAllFruits().then((result) => {
-            setFruits(result);
-        });
+        fruitService.getAllFruits()
+            .then(result => setFruits(result))
+            .catch(err =>{
+                console.log(err);
+            });
     }, []);
     return (
         <section className="fruit_section layout_padding-bottom mt-5">

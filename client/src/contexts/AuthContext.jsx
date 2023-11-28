@@ -1,24 +1,19 @@
 import { createContext} from 'react';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Path from '../path';
 
 import * as authService from "../services/authService";
-import * as testimonialService from "../services/testimonialService";
-
-
+import usePersistedSTate from '../hooks/usePersistedState';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({
     children,
 }) =>{
-    const [auth, setAuth] = useState(()=>{
-        localStorage.removeItem('accessToken');
-        return {};
-    });
-  
     const navigate = useNavigate();
+    const [auth, setAuth] = usePersistedSTate('auth', {});
+  
 
     const loginSubmitHandler = async (values) => {
         const result = await authService.login(values.email, values.password);
@@ -39,15 +34,9 @@ export const AuthProvider = ({
     };
 
     const  logoutHandler = () =>{
-       
         localStorage.removeItem('accessToken');
         setAuth({});
-       
 }
-
-
-
-    
 
     const values = {
         loginSubmitHandler,
