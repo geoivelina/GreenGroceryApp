@@ -1,35 +1,28 @@
-// export const requester = async (method, url) => {
-//     const res = await fetch(url, {
-//         method,
-//     });
-//     try {
-//         const result = await res.json();
-
-//         return result;
-//     } catch (error) {
-//         return {};
-//     }
-// };
-
 export const requester = async (method, url, data) => {
-    const res = await fetch(url, {
-        ...buildOptions(data),
-        method,
-    });
+    try {
+        const res = await fetch(url, {
+            ...buildOptions(data),
+            method,
+        });
+        console.log('Response Status:', res.status);
+        console.log('Response Status Text:', res.statusText);
 
+        // checks if there is content in the request
+        if (res.status === 204) {
+            return {};
+        }
 
-    //checks if there is content in the request
-    if (res.status === 204) {
-        return {};
+        const result = await res.json();
+
+        if (!res.ok) {
+            throw result;
+        }
+
+        return result;
+    } catch (error) {
+        console.error("Request failed:", error);
+       // throw error; // rethrow the error to be handled by the calling code
     }
-
-    const result = await res.json();
-
-    if (!res.ok) {
-        throw result;
-    }
-
-    return result;
 };
 
 const buildOptions = (data) => {

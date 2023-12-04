@@ -1081,14 +1081,26 @@
     	users: {
     		"35c62d76-8152-4626-8712-eeb96381bea8": {
     			email: "peter@abv.bg",
+                fullName:"Peter Petrov",
+                address:"Some City, Some Street",
+                phoneNumber:"+359 123 456 789",
+                userImage:"images/client-img.png",
     			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
     		},
     		"847ec027-f659-4086-8032-5173e2f9c93a": {
     			email: "iva@mail.com",
+                fullName:"Iva Ivanova",
+                address:"Some City, Some Street",
+                phoneNumber:"+359 123 456 789",
+                userImage:"images/client-img2.png",
     			hashedPassword: "83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1"
     		},
     		"60f0cf0b-34b0-4abd-9769-8c42f830dffc": {
     			email: "admin@abv.bg",
+                fullName:"Admin Admin",
+                address:"Some City, Some Street",
+                phoneNumber:"+359 123 456 789",
+                userImage:"images/client-img2.png",
     			hashedPassword: "fac7060c3e17e6f151f247eacb2cd5ae80b8c36aedb8764e18a41bbdc16aa302"
     		}
     	},
@@ -1305,7 +1317,7 @@
         },
         testimonials: {
             "10bf647c-84a8-11ee-8ac8-325096b39f47":{
-                "customerName":"Jone Mark",
+                "customerName":"Peter Petrov",
                 "imageUrl":"images/client-img.png",
                 "title": "Lorem ipsum dolor sit amet,",
                 "text":"consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris ut aliquip ex ea commodo         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse",

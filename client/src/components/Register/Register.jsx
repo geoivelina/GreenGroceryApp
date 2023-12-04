@@ -5,9 +5,12 @@ import { useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
 
 
-//It brakes when value = {formValues[RegisterFormKeys.Email]}
 const RegisterFormKeys = {
   Email: "email",
+  FullName:'fullName',
+  Address:'address',
+  PhoneNumber:"phoneNumber",
+  UserPhoto:'userPhoto',
   Password: "password",
   ConfirmPassword: 'confirmPassword'
 };
@@ -17,6 +20,10 @@ export default function Register() {
 
     const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
       [RegisterFormKeys.Email]:"",
+      [RegisterFormKeys.FullName]:"",
+      [RegisterFormKeys.Address]:"",
+      [RegisterFormKeys.PhoneNumber]:"",
+      [RegisterFormKeys.UserPhoto]:"",
       [RegisterFormKeys.Password]:'',
       [RegisterFormKeys.ConfirmPassword]:'',
     });
@@ -52,6 +59,46 @@ export default function Register() {
                                         </div>
                                         <div>
                                             <input
+                                                type="text"
+                                                id="fullName"
+                                                name={RegisterFormKeys.FullName}
+                                                placeholder="Full Name"
+                                                onChange={onChange}
+                                                value={values[RegisterFormKeys.FullName]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="address"
+                                                name={RegisterFormKeys.Address}
+                                                placeholder="City, Street, Street number"
+                                                onChange={onChange}
+                                                value={values[RegisterFormKeys.Address]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="phoneNumber"
+                                                name={RegisterFormKeys.PhoneNumber}
+                                                placeholder="+123 123 456 789"
+                                                onChange={onChange}
+                                                value={values[RegisterFormKeys.PhoneNumber]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="userPhoto"
+                                                name={RegisterFormKeys.UserPhoto}
+                                                placeholder="Image URL"
+                                                onChange={onChange}
+                                                value={values[RegisterFormKeys.UserPhoto]}
+                                            />
+                                        </div>
+                                        <div>
+                                            <input
                                                 type="password"
                                                 id="password"
                                                 name={RegisterFormKeys.Password}
@@ -71,7 +118,7 @@ export default function Register() {
                                             />
                                         </div>
                                         <div>
-                                            <button type="submit">Send</button>
+                                            <button type="submit">Register</button>
                                         </div>
                                     </div>
                                 </div>

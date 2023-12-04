@@ -5,9 +5,12 @@ const Path=  {
     Catalog:"/catalog",
     FruitDetails: "/fruits/:fruitId",
     Testimonial:"/testimonial",
+    AddTestimonial:"/testimonial/createTestimonial",
     ContactUs:"/contactUs",
     Login:"/login",
     Register:"/register",
-    Logout:'/logout'
+    Logout:'/logout',
+    Profile:'/profile',
+
 }
 export default Path;

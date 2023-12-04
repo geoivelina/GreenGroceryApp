@@ -19,6 +19,7 @@ import Register from "./components/Register/Register";
 import Shop from "./components/Shop/Shop";
 import StoreInfo from "./components/StoreInfo/StoreInfo";
 import Testimonial from "./components/Testimonial/Testimonial";
+import CreateTestimonial from "./components/Testimonial/CreateTestimonial";
 
 function App() {
     return (
@@ -33,6 +34,7 @@ function App() {
                     <Route  path={Path.Catalog} element={<Catalog />}  />
                     <Route path={Path.FruitDetails} element={<FruitDetails />}  />
                     <Route path={Path.Testimonial} element={<Testimonial />} />
+                    <Route path={Path.AddTestimonial} element={<CreateTestimonial />} />
                     <Route path={Path.ContactUs} element={<ContactUs />} />
                     <Route path={Path.Login} element={<Login />} />
                     <Route path={Path.Register} element={<Register />} />

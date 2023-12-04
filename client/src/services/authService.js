@@ -7,7 +7,6 @@ export const login = async (email, password) => {
         email,
         password,
     });
-
     return result;
 };
 
@@ -16,4 +15,6 @@ export const register = (email, password)=> requester("POST", `${baseUrl}/regist
     password,
 });
 
-export const logout = async ()=> {requester("GET", `${baseUrl}/logout`)};
+export const logout = async () => {
+    requester("GET", `${baseUrl}/logout`);
+};

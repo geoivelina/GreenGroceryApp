@@ -1,55 +1,53 @@
-import { createContext} from 'react';
+import { createContext } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Path from '../path';
+import Path from "../path";
 
 import * as authService from "../services/authService";
-import usePersistedSTate from '../hooks/usePersistedState';
+import usePersistedSTate from "../hooks/usePersistedState";
 
 const AuthContext = createContext();
 
-export const AuthProvider = ({
-    children,
-}) =>{
+export const AuthProvider = ({ children }) => {
     const navigate = useNavigate();
-    const [auth, setAuth] = usePersistedSTate('auth', {});
-  
+    const [auth, setAuth] = usePersistedSTate("auth", {});
 
     const loginSubmitHandler = async (values) => {
         const result = await authService.login(values.email, values.password);
         setAuth(result);
-        localStorage.setItem('accessToken', result.accessToken);
-
+        localStorage.setItem("accessToken", result.accessToken);
         navigate(Path.Home);
     };
 
-    const registerSubmitHandler = async (values) => {
+    const registerSubmitHandler =  (values) => {
         //TODO confirm  passwords match
-       const result = await authService.register(values.email, values.password);
-        
-       setAuth(result);
-        localStorage.setItem('accessToken', result.accessToken);
+        console.log(values);
+        const result =  authService.register(values.email, values.password);
+        setAuth(result);
+
+        localStorage.setItem("accessToken", result.accessToken);
 
         navigate(Path.Home);
     };
 
-    const  logoutHandler = () =>{
-        localStorage.removeItem('accessToken');
+    const logoutHandler = () => {
+        localStorage.removeItem("accessToken");
         setAuth({});
-}
+    };
 
     const values = {
         loginSubmitHandler,
         registerSubmitHandler,
+        fullName: auth.fullName,
+        email:  auth.email,
         logoutHandler,
-        email: auth.email,
         isAuthenticated: !!auth.accessToken,
     };
-    return(
+    return (
         <AuthContext.Provider value={values}>
             {children}
         </AuthContext.Provider>
-    )
-}
+    );
+};
 
 export default AuthContext;
